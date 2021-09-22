@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imersão Dev - Aula 06</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tabela da Premier League 2015/2016 que mostra os 4 primeiros colocados</h1>
+
+    <div class="InserirJogador">
+        <input type="text" id="NovoJogador" placeholder="Insira o nome do jogador"></div>
+
+    <div class="container">
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" 
+        class="page-logo" alt=""><br><br>
+
+    <table style="width:100%">
+        <thead>
+            <tr>
+              <th>Time</th>
+              <th>Vitórias</th>
+              <th>Empates</th>
+              <th>Derrotas</th>
+              <th>Pontos</th>
+              <th colspan="3">Ações</th>
+            </tr>
+          </thead>
+
+          <tbody id="tabelaTimes">
+            <tr>
+                <td><img width="75px" height="75px" src="imagens-Times/Leicester City.png"><strong> 1º Leicester City</strong></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><button onClick="adicionarVitoria()">Vitória</button></td>
+                <td><button onClick="adicionarEmpate()">Empate</button></td>
+                <td><button onClick="adicionarDerrota()">Derrota</button></td>
+              </tr>
+
+              <tr>
+                  <td><img width="70px" height="70px" src="imagens-Times/ARS sem fundo.png"><strong> 2º Arsenal</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><button onClick="adicionarVitoria()">Vitória</button></td>
+                  <td><button onClick="adicionarEmpate()">Empate</button></td>
+                  <td><button onClick="adicionarDerrota()">Derrota</button></td>
+
+              </tr>
+
+              <tr>
+                  <td><img width="70px" height="70px" src="Imagens-Times/Tottenham.png"><strong> 3º Tottenham</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><button onClick="adicionarVitoria()">Vitória</button></td>
+                  <td><button onClick="adicionarEmpate()">Empate</button></td>
+                  <td><button onClick="adicionarDerrota()">Derrota</button></td>
+
+              </tr>
+
+              <tr>
+                  <td><img width="70px" height="70px" src="imagens-Times/Manchester_City.png"><strong> 4ª Man City</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><button onClick="adicionarVitoria()">Vitória</button></td>
+                  <td><button onClick="adicionarEmpate()">Empate</button></td>
+                  <td><button onClick="adicionarDerrota()">Derrota</button></td>
+
+                  <div class="Jogo">
+                      <button type="submit" onClick="adicionarJogador()">
+                        Adicionar Jogador
+                      </button>
+
+                      <button type="submit" onClick="ZerarPontuação()">
+                        Zerar Pontuação
+                      </button>
+
+                  </div>
+
+              </tr>
+
+          </tbody>
+
+        </div>
+
+    </table>
+    <br>
+
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+
+</body>
+</html>
